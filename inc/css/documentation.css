@@ -1,0 +1,46 @@
+dl { border-bottom:1px solid #ccc; padding:0 0 30px; margin-bottom:0px; }
+dl:last-child { border-bottom:none; margin-bottom:none!important; }
+dt { font-style:italic; color:#111; }
+dd { margin:0 0 20px 20px; color:#666; }
+dd dl { margin:0 0 0 10px; border-bottom:none; padding:0; }
+dd dl dd { margin: 0 0 10px 20px; }
+h3 { color:#515151; font-size:1.6em; font-weight:normal; font:italic 24px/35px Georgia,"Times New Roman","Bitstream Charter",Times,serif; }
+textarea { padding:10px; border:1px solid #dfdfdf; margin-bottom:40px; font-size:12px; width:99.7%; }
+
+.shameless-plugs .twitter a { display:block; height:128px; width:128px; overflow:hidden; text-indent:-9999px; background:transparent url(../i/pillow_128.png) 0 0 no-repeat; float:left; }
+.shameless-plugs .donate-button { margin-top:40px; float:left; margin-left:10px; }
+.shameless-plugs .website a { display:block; height:62px; width:400px; overflow:hidden; text-indent:-9999px; background:transparent url(../i/tbdlogo.png) 0 0 no-repeat; float:left; margin:40px 0 0 10px; }
+
+#tbt-documentation-tabs { margin:10px 0 0 0; }
+#tab-content-container { border:1px solid #ccc; padding:20px 20px 0; margin:0 5px 20px 0; -moz-box-shadow:0 -1px 5px #ccc; -webkit-box-shadow:0 -1px 5px #ccc; -o-box-shadow:0 -1px 5px #ccc; box-shadow:0 -1px 5px #ccc; }
+#tbt-documentation-tabs #tabs li { padding: 9px 20px 10px 20px; border:1px solid #ccc; float:left; display:inline; margin:0 10px 0 0; font-size:1.6em!important; position:relative; top:1px; font-family:Georgia,"Times New Roman","Bitstream Charter",Times,serif; background:#ececec url(../i/button_off.png) bottom left repeat-x; }
+#tbt-documentation-tabs #tabs li a { text-decoration:none; }
+#tbt-documentation-tabs #tabs .ui-tabs-selected { border-bottom:none; background-color:white; background-image:none; top:1px; border-top:3px solid #666; }
+#tbt-documentation-tabs #tabs .ui-tabs-selected a { color:#333; text-decoration:none; text-shadow:#fff -1px -1px 1px; }
+
+/* output settings stuff */
+#template-name,
+#template-description { width:99.3%; background-color:white; }
+
+#templates th { psosition:relative; }
+#templates th a.delete-template { display:block; color:#b01803; font-size:.8em; text-decoration:none; margin-top:20px;  }
+#templates th h3 { margin:0 0 5px 0; line-height:1em; padding:0; text-shadow:1px 1px 0 #fff; }
+#templates th small { color:#666; font-size:.9em; text-shadow:1px 1px 0 #fff; }
+#templates .form-table { margin:10px 0;}
+#templates .form-table tr { border:1px solid #dfdfdf; padding:15px;  }
+#templates .form-table tr th,
+#templates .form-table tr td {
+    padding:15px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(50%,#f3f3f3), color-stop(51%,#ededed), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* IE10+ */
+    background: linear-gradient(top,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.CodeMirror-wrapping { background-color:white; }
+#examples code { background-color:white; padding:20px; border:1px solid #dfdfdf; display:block; max-height: 250px; overflow:auto; }
+#examples { padding-bottom:20px; }

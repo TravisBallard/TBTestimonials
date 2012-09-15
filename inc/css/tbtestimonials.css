@@ -1,0 +1,33 @@
+.tbtclear:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.hidden-testimonial { display:none; }
+
+#tbtestimonials-widget p,
+#tbtestimonial p { padding:0; margin:0; line-height:1.1em!important; color:inherit; }
+
+.ajax-loader { /*display:none;*/ text-align:center; height:100%; position:relative; padding:20px; }
+.ajax-loader img { display:block; height:auto; width:auto; margin:0 auto!important; }
+#tbtestimonials-widget { margin-bottom:20px; list-style-type:none; list-style-position:outside; }
+
+#tbtestimonials-widget { list-style-type:none!important; list-style-position:outside; margin:0!important; }
+#tbtestimonials-widget li.testimonial-slide ul { list-style-type:none!important; list-style-position:outside; margin:0; }
+#tbtestimonials-widget li.testimonial-slide ul li.testimonial {  }
+#tbtestimonials-widget li.testimonial-slide { font-size:1em; clear:both; margin:0!important; }
+#tbtestimonials-widget li.testimonial-slide .testimonial-gravatar { float:left; width:50px; margin-right:10px; }
+#tbtestimonials-widget li.testimonial-slide .testimonial-data { float:left; width:140px; }
+#tbtestimonials-widget li.testimonial-slide .testimonial-data .testimonial-author { padding-top:5px; font-size:1em; }
+#tbtestimonials-widget li.testimonial-slide .testimonial-data .testimonial-company { font-size:1em; }
+#tbtestimonials-widget li.testimonial-slide .testimonial-data p { margin:0; line-height:12px; }
+
+div.in-content-testimonial { font-size:1em; clear:both; margin:10px 0; }
+div.in-content-testimonial .testimonial-gravatar { float:left; width:50px; margin-right:10px; }
+div.in-content-testimonial .testimonial-data { float:left; width:450px; }
+div.in-content-testimonial .testimonial-data p { margin:0!important; padding:0!important; }
+div.in-content-testimonial .testimonial-data .testimonial-author { padding-top:5px; font-size:1em; padding-top:5px!important; }
+div.in-content-testimonial .testimonial-data .testimonial-company { font-size:1em; }
+
+#tbtestimonial-listing div.in-listing-testimonial { font-size:1em; clear:both; margin:15px 0; padding:15px; border:1px solid #dfdfdf;  }
+#tbtestimonial-listing div.in-listing-testimonial .testimonial-gravatar { float:left; width:50px; margin-right:10px; }
+#tbtestimonial-listing div.in-listing-testimonial .testimonial-data { float:left; width:80%; }
+#tbtestimonial-listing div.in-listing-testimonial .testimonial-data p { margin:0!important; padding:0!important; }
+#tbtestimonial-listing div.in-listing-testimonial .testimonial-data .testimonial-author { padding-top:5px; font-size:1em; }
+#tbtestimonial-listing div.in-listing-testimonial .testimonial-data .testimonial-company { font-size:1em; }
