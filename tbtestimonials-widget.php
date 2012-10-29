@@ -264,6 +264,10 @@ class TBTestimonialsWidget extends WP_Widget
 
         if( $testimonials->have_posts() )
         {
+            # fixes a bug where random testimonials are not random. 10/29/2012
+            if( $testimonial_args['orderby'] == 'rand' )
+                shuffle( $testimonials->posts );
+
             $tbtestimonials = new TBTestimonials();
 
             if( isset( $tbtestimonials_settings['show_loading_graphic'] ) ) : ?>
