@@ -91,7 +91,7 @@ class TBTestimonials
 
         # shortcodes
         add_action('wp_ajax_tbtestimonials-shortcode', array( &$this, 'shortcode_window' ) );
-        add_shortcode( 'testimonial', array( &$this, 'shortcode' ) );
+        add_shortcode( apply_filters( 'tbt_testimonial_shortcode', 'testimonial' ), array( &$this, 'shortcode' ) );
         add_shortcode( 'testimonial_form', array( &$this, 'testimonial_form' ) );
 
         # image sizes

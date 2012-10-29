@@ -134,6 +134,11 @@
 
                     <dt>tbt_template_functions</dt>
                     <dd><strong>Hook</strong> for adding new tags. See Examples Tab for an example.</dd>
+
+                    <dt>tbt_testimonial_shortcode</dt>
+                    <dd><strong>Hook</strong> for changing the default shortcode from 'testimonial' to something else.</dd>
+
+
                 </dl>
             </div>
 
