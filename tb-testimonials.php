@@ -1041,9 +1041,11 @@ if( is_admin() )
 *
 * @param mixed $id
 */
-function tbtestimonial( $id = false, $cat = false, $template = 'shortcode', $echo = true, $order = 'desc', $orderby = 'menu_order' )
+function tbtestimonial( $id = false, $cat = false, $template = 'shortcode', $echo = true, $order = 'desc', $orderby = 'menu_order')
 {
+
     $tbtestimonials = new TBTestimonials();
+    $output = array();
 
     if( is_string( $id ) && $id == 'random' || is_string( $id ) &&  $id == 'rand' || $id === false  )
         $q = new WP_Query( array( 'post_type' => 'testimonial', 'post_status' => 'publish', 'orderby' => 'rand', 'posts_per_page' => 1 ) );
@@ -1062,13 +1064,17 @@ function tbtestimonial( $id = false, $cat = false, $template = 'shortcode', $ech
         {
             $q->the_post();
             if( isset( $tbtestimonials->settings['use_template_api'] ) )
-                $output = sprintf( '<div class="tbtestimonial">%s</div>', $tbtestimonials->prepare_testimonial( sanitize_title( $template ) ) );
+                $output[] = sprintf( '<div class="tbtestimonial">%s</div>', $tbtestimonials->prepare_testimonial( sanitize_title( $template ) ) );
             else
-                $output = sprintf( '<div class="tbtestimonial">%s</div>', $tbtestimonials->deprecated__prepare_testimonial( 'shortcode-single' ) );
+                $output[] = sprintf( '<div class="tbtestimonial">%s</div>', $tbtestimonials->deprecated__prepare_testimonial( 'shortcode-single' ) );
         }
 
-        $output = apply_filters( 'tbtestimonials_single_syntax', $output );
-        if( ! $echo ) return $output; else print $output;
+        foreach( $output as $k => $v )
+        {
+            $output[$k] = apply_filters( 'tbtestimonials_single_syntax', $v );
+        }
+
+        if( ! $echo ) return $output; else print implode("\n", $output);
     }
     else
         return false;
